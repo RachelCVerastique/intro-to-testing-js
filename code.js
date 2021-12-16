@@ -1,9 +1,8 @@
 // // helloWorld function
-// function helloWorld() {
+// var helloWorld = function() {
 //     return "Hello, World!";
 // }
 
-
-function helloWorld() {
-    return "Hello, World!";
+function sayHello() {
+   // return "Hello, " + name;
 }
