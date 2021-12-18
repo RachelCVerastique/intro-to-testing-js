@@ -10,6 +10,31 @@ function sayHello(name) {
     return "Hello, " + name + "!";
 }
 
+//console.log(sayHello(false));
+
+
+function isFive(number) {
+    return parseInt(number) === 5;
+}
+
+console.log(isFive(456));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

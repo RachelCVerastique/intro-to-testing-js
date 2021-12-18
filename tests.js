@@ -19,6 +19,7 @@ describe('helloWorld', function() {
 });
 
 describe('sayHello', function() {
+
     it('should be a defined function', function () {
         expect(typeof sayHello).toBe('function');
     });
@@ -39,9 +40,24 @@ describe('sayHello', function() {
         expect(sayHello("Pat")).toBe("Hello, Pat!");
     });
 
-
-
-
 })
 
+describe('isFive', function() {
+
+    it('should be a defined function', function () {
+        expect(typeof isFive).toBe('function');
+    });
+
+    it('should return a boolean when called', function() {
+        expect(typeof isFive()).toBe("boolean");
+    });
+
+    it('should return 5 when called', function() {
+        expect(isFive(5)).toBe(true);
+    });
+
+    it('should return true when the string "5" is passed through', function() {
+        expect(isFive("5")).toBe(true);
+    });
+})
 
