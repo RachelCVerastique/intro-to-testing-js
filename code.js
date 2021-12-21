@@ -17,7 +17,7 @@ function isFive(number) {
     return parseInt(number) === 5;
 }
 
-console.log(isFive(456));
+//console.log(isFive(456));
 
 
 
@@ -32,12 +32,20 @@ function isEven (num) {
        return false;
    }
 }
-console.log(isEven(Infinity));
+//console.log(isEven(Infinity));
 
 
+function isVowel(vowel) {
+    if (vowel === 'a') {
+        return true;
+    } else if (vowel === 'A') {
+        return true;
+    } else {
+        return false;
+    }
+}
 
-
-
+console.log(isVowel());
 
 
 
