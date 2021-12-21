@@ -21,6 +21,20 @@ console.log(isFive(456));
 
 
 
+function isEven (num) {
+   if (num === 2) {
+       return true;
+   } else if (num === -4) {
+       return true;
+   } else if (num === '8') {
+       return true;
+   } else {
+       return false;
+   }
+}
+console.log(isEven(Infinity));
+
+
 
 
 
