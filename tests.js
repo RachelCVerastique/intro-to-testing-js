@@ -141,6 +141,38 @@ describe('isVowel', function() {
 
     it('should return false when called without an argument', function () {
         expect(isVowel()).toBe(false);
-
     });
+})
+
+describe('add', function() {
+
+    it('should be a defined function', function () {
+        expect(typeof add).toBe('function');
+    });
+
+    it('should return the sum of 5 when adding 2 and 3', function () {
+        expect(add(2,3)).toBe(5);
+    });
+
+    it('should return the sum of -12 when adding -9 and -3', function () {
+        expect(add(-3,-9)).toBe(-12);
+    });
+
+    it('should return the sum of 11 when string "5" and 6 are added', function () {
+        expect(add("5", 6)).toBe(11);
+    });
+
+    it('should return the sum of 6 when strings "-4" and "10" are added', function () {
+        expect(add("-4", "10")).toBe(6);
+    });
+
+    it('should return NaN when strings "banana" and "split" are called', function () {
+        //expect(add("banana", "split")).toBe(NaN);
+        expect(isNaN(add("banana", "split"))).toBe(true)
+     });
+
+    it('should return NaN when 2 and "apples" is called', function () {
+        expect(isNaN(add(2, "apples"))).toBe(true);
+    });
+
 })

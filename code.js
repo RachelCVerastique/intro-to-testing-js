@@ -45,9 +45,15 @@ function isVowel(vowel) {
     }
 }
 
-console.log(isVowel());
+//console.log(isVowel());
 
+ var x = "banana";
+var y = "split";
+function add(num, num2) {
+    return parseInt(num) + parseInt(num2);
+}
 
+console.log(add(2,"apples"));
 
 
 
